@@ -123,7 +123,8 @@ kubectl run meuapache --image=httpd:2.4
 * Deletar Pod
 
 ```
-?
+kubectl delete pod [name pod]
+
 ```
 ### Exportando manifesto de um Pod
 
@@ -203,13 +204,13 @@ kubectl create namespace teste
 1. Listar os namespaces?
 
 ```
-?
+kubectl get namespace
 
 ```
 2. Remover os namespaces?
 
 ```
-?
+kubectl delete [nome] -n namespace.
 ```
 
 * Filtrar Pods por namespace 
@@ -222,7 +223,8 @@ kubectl get pods -n teste
 3. Listar pods de todos os namespaces?
 
 ```
-?
+kubectl get pods --all-namespaces
+
 ```
 
 
